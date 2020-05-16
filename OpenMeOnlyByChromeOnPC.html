@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我可真skr小机灵鬼儿</title>
+    <link rel="stylesheet" href="utils/style.css">
+    <link rel="icon" href="utils/3.JPG">
+    <script>
+        isGray=false;
+    </script>
+</head>
+<body>
+    <div class="container0">
+        <div>
+            <img src="utils/1.JPG">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="words">
+            <p id="p1">L</p>
+            <p id="p2">A</p>
+            <p id="p3">N </p>
+            <p id="p4">L</p>
+            <p id="p5">A</p>
+            <p id="p6">N</p>
+            <br/>
+            <p id="p7">L</p>
+            <p id="p8">E</p>
+            <p id="p9">E</p>
+        </div>
+        <div class="mask">
+            <h1>Hello<span>,</span></h1>
+            <h2>My dear,</h2>
+            <h4>Let's play a game:)</h4>
+        </div>
+    </div>
+    <div class="container2" onmouseover="myFunctionOnMouseOver()" onmouseout="myFunctionOnMouseOut()">
+        <div class="twoBlocks">
+            <div class="blocks1" >
+                <div class="titleRectangle" id="an1"></div>
+                <h1 id="an2">Don't hurry to scroll down, read this first.</h1>
+            </div>
+            <div class="blocks2">
+                <div class="paragraphRectangle1" id="an3"></div>
+                <div id="an4">
+                    <h4>Below is a fake We-Chat page,</h4>
+                    <h4>Send the written message and switch the message-sender,</h4>
+                    <h4>Continue chatting if you like.</h4>
+                </div>
+            </div>
+            <div class="blocks3">
+                <div class="paragraphRectangle2" id="an5"></div>
+                <h2 id="an6">Then click the '+' button in the right-top of the chatting page, You'll see the page turning gray and no function would work. <span id="span1">SAY SOMETHING</span> to bring the <span id="span2">color</span> back!</h2>
+            </div>
+        </div>
+        <script>
+            let an1= document.getElementById("an1");
+            let an2= document.getElementById("an2");
+            let an3= document.getElementById("an3");
+            let an4= document.getElementById("an4");
+            let an5= document.getElementById("an5");
+            let an6= document.getElementById("an6");
+
+            function myFunctionOnMouseOver(){
+                an1.style.cssText += "-webkit-animation: my2Title 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 0s forwards;";
+                an2.style.cssText += "-webkit-animation: myh1Fade 1.5s linear 1.5s forwards;";
+                an3.style.cssText += "-webkit-animation: my2Paragraph1 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 2s forwards;";
+                an4.style.cssText += "-webkit-animation: myh2Fade1 1.5s linear 3.5s forwards;";
+                an5.style.cssText += "-webkit-animation: my2Paragraph2 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 4s forwards;";
+                an6.style.cssText += "-webkit-animation: myh2Fade2 1.5s linear 5.5s forwards;";
+            }
+            function myFunctionOnMouseOut() {
+                an1.style.animation="";
+                an2.style.animation="";
+                an3.style.animation="";
+                an4.style.animation="";
+                an5.style.animation="";
+                an6.style.animation="";
+            }
+        </script>
+    </div>
+    <div class="container3">
+        <div class="main-box">
+            <form>
+                <label id="labelMe">
+                    <input type="radio" id="me" name="chat" checked>
+                    <span style="color: #b5af38">Lee</span>
+                </label>
+                <label id="labelYou">
+                    <input type="radio" id="you" name="chat">
+                    <span style="color: #b5af38">Mr.Z</span>
+                </label>
+            </form>
+            <div class="box-left-bar">
+                <div class="chat-avatar"><img src="utils/2.jpg"><p>Lee</p></div>
+                <div class="utilities">
+                    <div class="utility"><div></div></div>
+                    <div class="utility"><div></div></div>
+                    <div class="utility"><div></div></div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts-head">
+                    <div class="search"></div>
+                    <div class="add"></div>
+                </div>
+                <div class="contacts-body">
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                    <div class="contacts-name"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <div class="chat-name">Mr.Z</div>
+                    <script>
+                        function onClickX() {
+                            let mainBox=document.getElementsByClassName("main-box")[0];
+                            mainBox.style.cssText="-webkit-animation: gettingGray 1s linear 0s forwards;";
+                            isGray = true;
+                        }
+                    </script>
+                    <div class="icon"  onclick="onClickX()"><p>+</p></div>
+                </div>
+                <div class="box-body">
+                    <div class="we-chats">
+                        <div class="specific-chat">
+                            <div class="chat">
+                                <div class="chat-avatar"><img src="utils/2.jpg"><p>Lee</p></div>
+                                <div class="chat-content"><p>Hello there</p></div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar"><img src="utils/1.JPG"><p>Mr.Z</p></div>
+                                <div class="chat-content"><p>Emmm</p></div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar"><img src="utils/2.JPG"><p>Lee</p></div>
+                                <div class="chat-content"><p>What's up</p></div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar"><img src="utils/1.JPG"><p>Mr.Z</p></div>
+                                <div class="chat-content"><p>Nothing, um, may I ask you a question</p></div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar"><img src="utils/2.JPG"><p>Lee</p></div>
+                                <div class="chat-content"><p>What's going on, hh</p></div>
+                            </div>
+                            <div class="chat" style="height:108px">
+                                <div class="chat-avatar"><img src="utils/1.JPG"><p>Mr.Z</p></div>
+                                <div class="chat-content" style="height:108px"><p>Just the same old question: would you be willing to share an umbrella with me that night if I didn't miss my umbrella?</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-foot">
+                    <div class="edit">
+                        <textarea id="msg" onkeydown="keyDown(event)">哈哈哈哈哈,maybe?</textarea>
+                    </div>
+                    <script>
+                        function removeMsg() {
+                            let speChat=document.getElementsByClassName("specific-chat")[0];
+                            let new_you=document.getElementsByClassName("new-chat-you");
+                            new_you=new_you[new_you.length-1];
+                            speChat.removeChild(new_you);
+                        }
+                        function sendMsg(msg,checkMe) {
+                            let className;
+                            let innerHTML;
+                            if(checkMe){
+                                className="new-chat-me";
+                                innerHTML="<img src='utils/2.jpg'><p>Lee</p>"
+                            }else{
+                                className="new-chat-you";
+                                innerHTML="<img src='utils/1.jpg'><p>Mr.Z</p>"
+                            }
+                            let speChat=document.getElementsByClassName("specific-chat")[0];
+                            let newChat=document.createElement("div");
+                            newChat.className=className;
+                            newChat.innerHTML="<div class='chat-avatar'>"+innerHTML+"</div><div class='chat-content'><p>"+msg+"</p></div>";
+                            speChat.appendChild(newChat);
+                            //why here two p tag were added? I didn't figure it out now.
+                            let p = newChat.children[1].children[0];
+                            let height = p.offsetHeight+18;
+                            newChat.style.cssText="height:"+height+"px;";
+                            let boxBody=document.getElementsByClassName("box-body")[0];
+                            boxBody.scrollTop=boxBody.scrollHeight;
+                            // console.log(newChat.style.cssText+","+Math.floor(p.offsetHeight/20)+","+p.offsetHeight+","+newChat.offsetHeight)
+                        }
+                        function onClickSend() {
+                            let textarea=document.getElementById("msg");
+                            let msg=textarea.value;
+                            let checkMe=document.getElementById("me").checked;
+
+                            if(isGray){
+                                if(/I miss you|i miss u/i.test(msg)&&(checkMe)){
+                                    let mainBox=document.getElementsByClassName("main-box")[0];
+                                    mainBox.style.cssText="-webkit-filter:none;";
+                                    isGray=false;
+                                    sendMsg(msg,true);
+                                    textarea.value="";
+                                    setTimeout("sendMsg('Bingo! There you go!',false)",700);
+                                    setTimeout("sendMsg('Babe i miss u, too!!!',false)",1400);
+                                }else if(/(missing|miss) (u|you)/i.test(msg)&&(checkMe)){
+                                    setTimeout("sendMsg('You\\'re very close!',false)",0);
+                                    // setTimeout("removeMsg()",1400);
+                                }else if(/miss|you|u|i/i.test(msg)&&(checkMe)){
+                                    setTimeout("sendMsg('You\\'ve got at least one word right of the answer!',false)",0);
+                                    // setTimeout("removeMsg()",1400);
+                                }
+                            }else{
+                                sendMsg(msg,checkMe);
+                                textarea.value="";
+                                // console.log(msg,textarea.value);
+                                if(checkMe){
+                                    if(msg.replace(/\n/g,"")===""){
+                                        setTimeout("sendMsg('Wha-cha wanna say exactly?',false)",700);
+                                    }else if(/(miss|missing) (u|you)/i.test(msg)){
+                                        setTimeout("sendMsg('Babe i miss u 3000!!!',false)",700);
+                                    }else if(/yes|yeah|of course/i.test(msg)){
+                                        setTimeout("sendMsg('I knew it!!!',false)",700);
+                                    }else if(/hh|哈哈|haha/.test(msg)){
+                                        setTimeout("sendMsg('哈哈哈哈哈哈哈哈哈哈哈',false)",700);
+                                    }else if(/\?|？|！|!|tql|强|卧槽|woc|我去|真/.test(msg)){
+                                        setTimeout("sendMsg('I\\'m just a haha robot without any emotion:D',false)",700);
+                                    }
+                                }
+                            }
+                        }
+                        function keyDown(event) {
+                            let e = event;
+                            if(e.keyCode===13){
+                                onClickSend()
+                            }
+                        }
+                    </script>
+                    <div class="send-btn" onclick="onClickSend()"><p style="-webkit-user-select:none;">Send</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container4" onmouseover="onMouseOver4()" onmouseout="onMouseOut4()">
+        <div class="hintDown">
+            <h1>Though life may turn <span id="span3">gloom</span> sometimes<span>,</span></h1>
+            <h2>A single "missing you" of yours can make it <span id="span4">colorful</span> again<span>.</span></h2>
+        </div>
+        <br/>
+        <div class="hintUp">
+            <h2>Where there is a wait<span>,</span></h2>
+            <h2>There is a journey<span>.</span></h2>
+            <h1>Waiting to see ya<span>.</span></h1>
+        </div>
+        <div class="maskDown"></div>
+        <div class="maskUp"></div>
+    </div>
+    <script>
+        let maskDown=document.getElementsByClassName("maskDown")[0];
+        let maskUp=document.getElementsByClassName("maskUp")[0];
+        let hintDown=document.getElementsByClassName("hintDown")[0];
+        let hintUp=document.getElementsByClassName("hintUp")[0];
+        function onMouseOver4() {
+            maskDown.style.cssText="-webkit-animation:maskBounceDown 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 0s forwards;";
+            maskUp.style.cssText="-webkit-animation:maskBounceUp 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 2.2s forwards;";
+            hintDown.style.cssText="-webkit-animation: hintDown 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) 0.9s forwards;";
+            hintUp.style.cssText="-webkit-animation: hintUp 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) 3.1s forwards;";
+        }
+        function onMouseOut4() {
+            maskDown.style.cssText="";
+            maskUp.style.cssText="";
+            hintDown.style.cssText="";
+            hintUp.style.cssText="";
+        }
+    </script>
+    <div class="container5">
+        <div class="foot" style="color: white">
+            <p>©2020 Mr.Z ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+</body>
+</html>
